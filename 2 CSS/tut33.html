@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <style>
+header{
+    display: flex;
+    flex-direction: column;
+}
+body{color: white;
+background-color: black;
+background: url(https://images.unsplash.com/photo-1559837627-de5ea80a1f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)
+no-repeat center center/cover;
+}
+
+
+.navigation{display: flex;font-size: 28px;}
+
+li{list-style: none;
+padding: 23px 34px;}
+header ::before{
+    background: url(https://images.unsplash.com/photo-1559837627-de5ea80a1f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+width: 100%;
+height: 100%;
+position: absolute;
+content: ;
+z-index: -1;
+}
+
+section{
+    margin: 3px 230px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    align-items: center;
+    justify-content: center;
+}
+h1{font-size: 4rem;}
+/* section::before{content: "this is a content";} */
+/* section::after{content: "this is a content";} */
+    </style>
+</head>
+<body>
+    <header>
+<nav class="navbar">
+<ul class="navigation">
+    <li class="item">home</li>
+    <li class="item">about</li>
+    <li class="item">services</li>
+    <li class="item">contact us</li>
+</ul>
+
+
+</nav>
+</header>
+<section>
+    <h1>welcome to coding world</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum mollitia amet aperiam expedita animi eius non. Perspiciatis, autem cupiditate odit ut esse quos laborum. Maxime assumenda quo debitis eum fugiat atque magni. Nihil.</p>
+</section>
+
+
+    
+</body>
+</html>
